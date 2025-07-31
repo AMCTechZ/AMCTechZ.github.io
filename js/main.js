@@ -1,6 +1,6 @@
 console.log("JS is linked and running!");
 // Theme Toggle
-const themeToggleBtn = document.getElementById('theme-tiggle');
+const themeToggleBtn = document.getElementById('theme-toggle');
 const userPrefersDark = Window.matchMedia('(prefers-color-scheme:dark)').matches;
 if(userPrefersDark) {
     document.body.classList.add('dark-mode');
