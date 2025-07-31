@@ -13,8 +13,16 @@ body.dark-mode {
     --text-secondary: #cccccc;
 }
 
-body {font-family: sans-serif; margin: 0; padding: 0;}
-h1 {color: darkblue;}
+body {
+    font-family: sans-serif; margin: 0; padding: 0;
+    h1 {color: darkblue;}
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, sans-serif; /* a clean default font, we might change */
+    transition: background 0.3s, color 0.3s; /* smooth theme transition */
+ }
+ 
 /* Navigation Bar Styles */
 .navbar {
     display: flex;
@@ -23,13 +31,7 @@ h1 {color: darkblue;}
     padding: 1rem 2rem;
     background: var(--bg); /* background color (we'll define --bg in theme variables) */
 }
-body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Segoe UI', Tahoma, sans-serif; /* a clean default font, we might change */
-    transition: background 0.3s, color 0.3s; /* smooth theme transition */
- }
- 
+
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
