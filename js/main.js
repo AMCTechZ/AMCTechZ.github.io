@@ -7,7 +7,7 @@ const userPrefersDark = supportsMatchMedia &&
                         
 if(userPrefersDark) {
     document.body.classList.add('dark-mode');
-    if (btn) btn.textContent = '☀'; // sun icon if dark mode is active (to swtich to light mode)
+    if (btn) btn.textContent = '☀️'; // sun icon if dark mode is active (to swtich to light mode)
 }
 if (btn) {
     btn.addEventListener('click', () => {
